@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modelo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <section class="container">
+
+    <div class="header">
+    <h2>Formulário de cadastro  Validação</h2>
+    <img src="assets/img/img-form.svg">
+    </div>
+  
+    
+    <form action="/" method="POST" class='form'>
+      <div class="section">
+      <label>Nome</label>
+      <input type="text" class="name validate">
+      <i class="fa fa-check-circle" aria-hidden="true"></i>
+			<i class="fa fa-times-circle" aria-hidden="true"></i>
+
+      </div>
+
+      <div class="section">
+      <label>Sobrenome</label>
+      <input type="text" class="last-name validate">
+      <i class="fa fa-check-circle" aria-hidden="true"></i>
+			<i class="fa fa-times-circle" aria-hidden="true"></i>
+
+      </div>
+
+      <div class="section">
+      <label>CPF</label>
+      <input type="text" class="cpf validate">
+      <i class="fa fa-check-circle" aria-hidden="true"></i>
+			<i class="fa fa-times-circle" aria-hidden="true"></i>
+
+      </div>
+
+      <div class="section">
+      <label>Usuário</label>
+      <input type="text" class="user validate">
+      <i class="fa fa-check-circle" aria-hidden="true"></i>
+			<i class="fa fa-times-circle" aria-hidden="true"></i>
+
+      </div>
+
+      <div class="section">
+      <label>Senha</label>
+      <input type="password" class="password validate">
+      <i class="fa fa-check-circle" aria-hidden="true"></i>
+			<i class="fa fa-times-circle" aria-hidden="true"></i>
+
+      </div>
+
+      <div class="section">
+      <label>Repetir Senha</label>
+      <input type="password" class="password-confirm validate">
+      <i class="fa fa-check-circle" aria-hidden="true"></i>
+			<i class="fa fa-times-circle" aria-hidden="true"></i>
+
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <script src="./assets/js/validaCPF.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

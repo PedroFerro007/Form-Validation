@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap');
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+body {
+	background-image: url(../img/body-bg.svg);
+	font-family: 'Teko', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+  font-size: 20px;
+}
+
+.container {
+  background-color: #fff;
+	border-radius: 5px;
+	overflow: hidden;
+	width: 450px;
+	max-width: 100%;
+}
+
+.header {
+  border-bottom: 2px solid #f0f0f0;
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.header h2 {
+  color: #001133;
+	margin: 0;
+  text-align: center;
+}
+
+.header img {
+  width: 75%;
+
+}
+
+.section {
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.section label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.section input {
+	border: 2px solid #777;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 20px;
+	padding: 8px;
+	width: 100%;
+}
+
+.section input:focus {
+	outline: 0;
+	border-color: #002266;
+}
+
+.form {
+	padding: 30px 40px;	
+}
+
+.error-text {
+  font-size: 17px;
+  color: red;
+}
+
+.section.success input {
+	border-color: #2ecc71;
+}
+
+.section.error input {
+	border-color: #e74c3c;
+}
+
+.section i {
+	visibility: hidden;
+	position: absolute;
+	top: 48px;
+	right: 10px;
+}
+
+.form button {
+	background-color: #002266;
+    border: 2px solid #002266;
+    border-radius: 4px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 20px;
+    padding: 8px;
+    margin-top: 15px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.section.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.section.error i.fa-times-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
